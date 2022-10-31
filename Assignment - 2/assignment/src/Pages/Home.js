@@ -171,8 +171,8 @@ function PropertyDetailedDesc({ property }) {
                                                         <p> {property.nightlyfee} </p>
                                                     </div>
                                                 </div>
-                                                <div class = "row">
-                                                    <div class = "col-md-6">
+                                                <div class="row">
+                                                    <div class="col-md-6">
                                                         <p><u>Service Fees:</u></p>
                                                     </div>
                                                     <div class="col-md-6 text-right">
@@ -347,10 +347,14 @@ function MainContainer({ properties, filterText }) {
     );
 }
 
-function PropertyImage({ propertyImage }) {
+function PropertyImage({ propertyImage, isActive }) {
     const image = "Assets/".concat(propertyImage);
+    var classvalue = 'carousel-item'
+    if (isActive) {
+        classvalue = classvalue.concat(' active')
+    }
     return (
-        <div class="carousel-item active">
+        <div class={classvalue}>
             <img src={image} class="d-block w-100" alt="..." />
         </div>
     );
@@ -358,21 +362,28 @@ function PropertyImage({ propertyImage }) {
 
 function Property({ property, handlePropertyId }) {
     const images = [];
-
+    var isActive = false;
+    var carouselId = "carouselExampleIndicators".concat(property.id);
+    var carouselTarget = "#".concat(carouselId)
     const handleClick = (e) => {
         handlePropertyId(property.id);
     }
 
-    property.images.forEach((image_) => {
+    property.images.forEach((image_, index) => {
+        if (index == 0) {
+            isActive = true;
+        } else {
+            isActive = false;
+        }
         images.push(
-            <PropertyImage propertyImage={image_} />
+            <PropertyImage propertyImage={image_} isActive={isActive} />
         );
     });
 
     return (
         <div class="col-md-4 col-lg-3">
-            <div class="card" onClick={handleClick}>
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="card">
+                <div id={carouselId} class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                             class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -381,11 +392,19 @@ function Property({ property, handlePropertyId }) {
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
                     </div>
-                    <div class="carousel-inner">
+                    <div class="carousel-inner" onClick={handleClick}>
                         {images}
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target={carouselTarget} data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target={carouselTarget} data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div class="card-body">
+                <div class="card-body" onClick={handleClick}>
                     <h6 class="card-title">{property.title}</h6>
                     <p class="card-text">{property.description}</p>
                     <p>{property.availability}</p>
@@ -439,7 +458,7 @@ function SideMenu() {
             <div class="d-flex flex-column  align-items-left align-items-sm-start side-menu-list">
                 <div class="container-fluid propertyButtons px-3 py-2">
                     <a href="#" class="d-flex flex-column align-items-left text-decoration-none">
-                        <span class="fs-5 sidemenu-buttons" style={{"color": "white"}}>Specially For you</span>
+                        <span class="fs-5 sidemenu-buttons" style={{ "color": "white" }}>Specially For you</span>
                     </a>
                 </div>
                 <ul class="nav nav-pills flex-column align-items-sm-left px-3 side-menu-list" id="menu">
