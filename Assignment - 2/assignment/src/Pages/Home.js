@@ -37,9 +37,9 @@ function PropertyTitle({ property }) {
                 </svg>
                 &nbsp;
                 {property.rating}
-                &nbsp;
+                &nbsp;|&nbsp;
                 <u>{property.review_count} reviews</u>
-                &nbsp;
+                &nbsp;|&nbsp;
                 {property.title}
             </p>
         </div>
@@ -124,7 +124,7 @@ function PropertyDetailedDesc({ property }) {
                                             <div class="col-md-4 m-0 p-0">
                                                 <div class="form-group">
                                                     <select class="form-control" required>
-                                                        <option value={property.bedrooms} selected hidden>no of rooms</option>
+                                                        <option defaultValue={property.bedrooms} selected hidden>no of rooms</option>
                                                         <option>1</option>
                                                         <option>2</option>
                                                         <option>3</option>
@@ -135,7 +135,7 @@ function PropertyDetailedDesc({ property }) {
                                             <div class="col-md-4 m-0 p-0">
                                                 <div class="form-group">
                                                     <select class="form-control" required>
-                                                        <option value={property.guests} selected hidden>no of adults</option>
+                                                        <option defaultValue={property.guests} selected hidden>no of adults</option>
                                                         <option>1</option>
                                                         <option>2</option>
                                                         <option>3</option>
@@ -145,7 +145,7 @@ function PropertyDetailedDesc({ property }) {
                                             <div class="col-md-4 m-0 p-0">
                                                 <div class="form-group">
                                                     <select class="form-control" required>
-                                                        <option value={property.guests} selected hidden>no of children</option>
+                                                        <option defaultValue={property.guests} selected hidden>no of children</option>
                                                         <option>0</option>
                                                         <option>1</option>
                                                         <option>2</option>
