@@ -80,7 +80,7 @@ function PropertyDetailedDesc({ property }) {
 
     return (
         <div class="row p-4">
-            <div class="col-lg-6 px-6">
+            <div class="col-lg-6 px-2">
                 <p>{property.guests} guests | {property.bedrooms} bed | {property.bathrooms} bath</p>
                 <hr />
                 <p><b>Self Check in</b></p>
@@ -106,7 +106,7 @@ function PropertyDetailedDesc({ property }) {
                                         <h3>Hold this Moment? </h3>
                                     </div>
                                     <form>
-                                        <div class="row m-6">
+                                        <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <input class="form-control" type="date" value={property.checkIn} required />
@@ -158,12 +158,24 @@ function PropertyDetailedDesc({ property }) {
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <p><u>Cleaning Fees:</u></p>
+                                                    </div>
+                                                    <div class="col-md-6 sm-1 text-right">
+                                                        <p> {property.cleaningfee} </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
                                                         <p><u>Nightly Fees:</u></p>
+                                                    </div>
+                                                    <div class="col-md-6 text-right">
+                                                        <p> {property.nightlyfee} </p>
+                                                    </div>
+                                                </div>
+                                                <div class = "row">
+                                                    <div class = "col-md-6">
                                                         <p><u>Service Fees:</u></p>
                                                     </div>
                                                     <div class="col-md-6 text-right">
-                                                        <p> {property.cleaningfee} </p>
-                                                        <p> {property.nightlyfee} </p>
                                                         <p> {property.servicefee} </p>
                                                     </div>
                                                 </div>
