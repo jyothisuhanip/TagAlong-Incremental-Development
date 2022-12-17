@@ -1,0 +1,79 @@
+.card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+
+  .side-menu:hover {
+    color:#416bdf;
+  }
+
+  .propertyCard {
+    border-color: #75d481;
+  }
+
+  .footercolor {
+    background-color:whitesmoke;
+  }
+
+  .propertyButtons {
+    background-color: #416bdf;
+    border-color: #416bdf;
+  }
+
+  .nontextdecoration {
+    text-decoration: none;
+    color: white;
+  }
+
+  .custom-navbar {
+    background-color: whitesmoke;
+  }
+
+  .sidemenu-buttons {
+    color: black;
+  }
+
+  .side-menu-list {
+    background-color: whitesmoke;
+  }
+
+  .search-icon {
+    color: whitesmoke;
+    background-color: #416bdf;
+    border-color: #416bdf;
+  }
+
+  button.search-submit {
+    margin-top: 0;
+  }
+
+  .search-form label {
+    display: inline;
+  }
+
+  #jumbElements {
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  .jumbotron {
+    justify-content: center;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-size: 100% 100%;
+    
+  }
+
+
+  .jumbheading {
+    justify-content: center;
+    padding-bottom: 20px;
+    align-items: center;
+  }
+
+  .logo_title {
+    color: #416bdf;
+  }

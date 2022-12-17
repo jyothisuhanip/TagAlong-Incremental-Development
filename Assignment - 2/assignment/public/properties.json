@@ -32,7 +32,7 @@
   }, 
   {
    "id": 2,
-   "title":"Ravenna, Texas",
+   "title":"Ravenna, Florida",
    "place_detail":"Mom's Tiny House Retreat",
    "description":"120 miles away",
    "availability":"Dec 9 - 15",
@@ -63,7 +63,7 @@
   }, 
   {
    "id": 3,
-   "title":"Pottsboro, Texas",
+   "title":"Pottsboro, San Antonio",
    "place_detail":"Lazy Acres Farmhouse. Peace. Beauty. Relaxation.",
    "description":"169 miles away",
    "availability":"Dec 12 - 15",
@@ -94,7 +94,7 @@
   }, 
   {
    "id": 4,
-   "title":"Cross Roads, Texas",
+   "title":"Cross Roads, California",
    "place_detail": "Winding Ridge Guest House",
    "description":"169 miles away",
    "availability":"Dec 9 - 12",
@@ -125,7 +125,7 @@
   }, 
   {
    "id": 5,
-   "title":"Anna, Texas",
+   "title":"Anna, Utah",
    "place_detail": "Modern ranch cabin at the base of the mountains!",
    "description":"169 miles away",
    "availability":"Dec 10 - 15",
@@ -156,7 +156,7 @@
   }, 
   {
    "id": 6,
-   "title":"Yantis, Texas",
+   "title":"Yantis, Tampa",
    "place_detail": "Lunker Lodge at Lake Leon",
    "description":"169 miles away",
    "availability":"Dec 10 - 15",

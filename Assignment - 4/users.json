@@ -1,0 +1,116 @@
+[
+    {
+        "userId": "2001",
+        "name": "Aishwarya Joseph",
+        "email": "aishwarya.joseph@gmail.com",
+        "address": {
+          "street": "Greenside dr",
+          "apt": "11232",
+          "city": "Richardson",
+          "state": "TX",
+          "country": "US",
+          "pincode": "75080"
+        },
+        "phonenumber": "8938929087",
+        "sex": "F",
+        "age": "54",
+        "password": "welcom123",
+        "favorites": ["1", "2"],
+        "ishost": "false"
+      },
+      {
+        "userId": "2002",
+        "name": "Adam Smith",
+        "email": "adam.smith@gmail.com",
+        "address": {
+          "street": "RockLake dr",
+          "apt": "1232",
+          "city": "Tampa",
+          "state": "FL",
+          "country": "US",
+          "pincode": "75190"
+        },
+        "phonenumber": "9087896543",
+        "sex": "M",
+        "age": "34",
+        "password": "adam1234",
+        "favorites": ["4", "2"],
+        "ishost": "false"
+      },
+      {
+        "userId": "2003",
+        "name": "Nathaniel Putera",
+        "email": "nathaniel.putera@gmail.com",
+        "address": {
+          "street": "Round Rock dr",
+          "apt": "2334",
+          "city": "Las Vegas",
+          "state": "CA",
+          "country": "US",
+          "pincode": "75789"
+        },
+        "phonenumber": "7896784567",
+        "sex": "M",
+        "age": "24",
+        "password": "nael123",
+        "favorites": ["1", "5"],
+        "ishost": "false"
+      },
+      {
+        "userId": "2004",
+        "name": "Michael Jordan",
+        "email": "michael.jordan@gmail.com",
+        "address": {
+          "street": "Water Park Avenue",
+          "apt": "7893",
+          "city": "Brookhaven",
+          "state": "NYC",
+          "country": "US",
+          "pincode": "79876"
+        },
+        "phonenumber": "4167894532",
+        "sex": "M",
+        "age": "45",
+        "password": "welcom123",
+        "favorites": ["1", "2"],
+        "ishost": "false"
+      },
+      {
+        "userId": "2005",
+        "name": "Oliver Chen",
+        "email": "oliver.chen@gmail.com",
+        "address": {
+          "street": "Lakeside dr",
+          "apt": "4567",
+          "city": "Tampa",
+          "state": "FL",
+          "country": "US",
+          "pincode": "71234"
+        },
+        "phonenumber": "9125672345",
+        "sex": "M",
+        "age": "64",
+        "password": "oliver234",
+        "favorites": ["3", "2"],
+        "ishost": "false"
+      },
+      {
+        "userId": "2006",
+        "name": "Daniel Hardman",
+        "email": "daniel.hardman@gmail.com",
+        "address": {
+          "street": "Campbell Rd",
+          "apt": "2345",
+          "city": "Nashville",
+          "state": "TN",
+          "country": "US",
+          "pincode": "74323"
+        },
+        "phonenumber": "3451267908",
+        "sex": "M",
+        "age": "32",
+        "password": "danny_12",
+        "favorites": ["4", "5"],
+        "ishost": "false"
+      }
+]
